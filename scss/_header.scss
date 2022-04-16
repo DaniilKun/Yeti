@@ -1,0 +1,59 @@
+header {
+    background-color: rgb(255, 255, 255);
+    margin: 16px 15px;
+    min-width: 290px;
+  }
+  .head1 {
+    display: flex;
+  }
+  
+  .head2 {
+    align-items: center;
+    display: flex;
+  }
+  
+  .logo {
+    min-width: 101px;
+    height: 100%;
+  }
+  
+  .icons {
+    min-width: 116px;
+    height: 100%;
+    margin: 5px 16px 9px;
+    display: flex;
+  }
+  .telegram {
+    padding: 0 10px;
+  }
+  
+  .burger {
+    max-width: 50px;
+    height: 100%;
+  }
+  
+  .vois {
+    background-color: white;
+    border-color: #ffedcb;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    width: 135px;
+    height: 40px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #464646;
+  }
+  
+  .number {
+    padding-left: 10px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #464646;
+  }

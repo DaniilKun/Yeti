@@ -1,0 +1,27 @@
+.gaid {
+    padding: 20px 6px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+  }
+
+  .gaidtxt {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    /* accent */
+    color: #fabd61;
+  }
+  
+  .txt {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
