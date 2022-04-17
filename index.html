@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -32,15 +32,18 @@
       </div>
     </header>
     <main>
-      <h1 class="mainHead">
-        Хотите сменить обстановку и<b>
-          отдохнуть душой среди гор и водопадов?</b
-        >
-      </h1>
-      <h1 class="mainText">
-        Ответьте на несколько вопросов и получите онлайн расчет тура по Кавказу
-        на современном комфортабельном внедорожнике
-      </h1>
+      <section class="banner-top">
+        <h1 class="mainHead">
+          Хотите сменить обстановку и
+          <b>
+            отдохнуть душой среди гор и водопадов?
+          </b>
+        </h1>
+        <h1 class="main-text">
+          Ответьте на несколько вопросов и получите онлайн расчет тура по
+          Кавказу на современном комфортабельном внедорожнике
+        </h1>
+      </section>
       <section class="baner">
         <button class="but">
           подобрать маршрут
@@ -93,16 +96,84 @@
           </h1>
         </div>
       </section>
+
+      <!-- ОПРОСНИК -->
       <section class="kviz">
-        <h1 class="kviz__txt1">
+        <!-- <div class="container"> -->
+        <h1 class="kviz__title">
           Пройдите короткий тест и получите индивидуальное предложение по туру
         </h1>
-        <h1 class="kviz__txt2">
-           <b>Какие достопримечательности </b>  Вас интересуют больше всего?
+        <h1 class="kviz__subtitle">
+          <b>Какие достопримечательности</b>
+          Вас интересуют больше всего?
         </h1>
-        <img class="kviz__img" src="img/пейзаж.png" alt="" />
-        <button class="kviz__but">далее</button>
+
+        <div class="kviz__checkboxes">
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Водопады</span>
+          </div>
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Горные озера</span>
+          </div>
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Панорамные смотровые на Эльбрус</span>
+          </div>
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Исторические памятники</span>
+          </div>
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Храмы и места Силы</span>
+          </div>
+
+          <div class="kviz__checkbox-item">
+            <label class="kviz__checkbox">
+              <input type="checkbox" />
+              <div class="kviz__checkbox-indicator"></div>
+            </label>
+            <span>Интересно все</span>
+          </div>
+        </div>
+
+        <div class="kviz__img">
+          <img class="" src="img/пейзаж.png" alt="" />
+        </div>
+        <button class="kviz__btn">далее</button>
+        <!-- </div> -->
       </section>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
   </body>
 </html>

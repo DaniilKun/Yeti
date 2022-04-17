@@ -355,33 +355,30 @@ header {
 }
 
 .kviz {
-  min-width: 290px;
+  padding: 40px 10px;
+  max-width: 290px;
+  margin: 0 auto;
+  width: 100%;
   position: relative;
-  background: #d3b3b3;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
-  padding-top: 40px;
-  padding-bottom: 50px;
 }
 
-.kviz__txt1 {
-  padding: 40px 20px 20px 10px;
+.kviz__title {
+  margin-bottom: 20px;
   display: block;
-  margin: auto;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: #FABD61;
+  color: #fabd61;
 }
 
-.kviz__txt2 {
-  padding-left: 10px;
-  padding-bottom: 30px;
-  display: block;
-  margin: auto;
+.kviz__subtitle {
+  margin-bottom: 30px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
@@ -394,10 +391,19 @@ header {
 .kviz__img {
   display: block;
   margin: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  max-width: 270px;
+  height: 214px;
 }
 
-.kviz__but {
+.kviz__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.kviz__btn {
   display: block;
   margin: auto;
   width: 250px;
@@ -409,7 +415,7 @@ header {
   -webkit-box-shadow: 0px 4px 20px rgba(255, 218, 160, 0.5), 0px 4px 0px #d3a854;
           box-shadow: 0px 4px 20px rgba(255, 218, 160, 0.5), 0px 4px 0px #d3a854;
   border-radius: 100px;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -418,5 +424,132 @@ header {
   text-transform: uppercase;
   color: #fefefe;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.kviz .kviz__checkboxes {
+  margin-bottom: 20px;
+}
+
+.kviz .kviz__checkbox {
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffedcb), to(#fabc5f));
+  background: linear-gradient(#ffedcb, #fabc5f);
+}
+
+.kviz .kviz__checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.kviz .kviz__checkbox-indicator {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 22px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.kviz .kviz__checkbox:hover input ~ .kviz__checkbox-indicator,
+.kviz .kviz__checkbox input:focus ~ .kviz__checkbox-indicator {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kviz .conkviz__checkboxtrol input:checked ~ .kviz__checkbox-indicator {
+  background: #2aa1c0;
+}
+
+.kviz .kviz__checkbox input:disabled ~ .kviz__checkbox-indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.kviz .kviz__checkbox-indicator:after {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.kviz .kviz__checkbox input:checked ~ .kviz__checkbox-indicator:after {
+  display: block;
+}
+
+.kviz .kviz__checkbox .kviz__checkbox-indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fabc5f;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.kviz .kviz__checkbox input:disabled ~ .kviz__checkbox-indicator:after {
+  border-color: #7b7b7b;
+}
+
+.kviz .kviz__checkbox .kviz__checkbox-indicator::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: -1.3rem;
+  margin-top: -1.3rem;
+  background: #2aa1c0;
+  border-radius: 3rem;
+  opacity: 0.6;
+  z-index: 99999;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.kviz .kviz__checkbox-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kviz .kviz__checkbox-item span {
+  margin-left: 10px;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #101010;
+}
+
+.kviz .kviz__checkbox-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
