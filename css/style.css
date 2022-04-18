@@ -188,7 +188,8 @@ header {
   text-align: center;
 }
 
-.mainHead {
+.main-head {
+  max-width: 757px;
   padding: 34px 14px 20px 17px;
   font-family: "Oswald";
   font-style: normal;
@@ -199,7 +200,8 @@ header {
   color: #342100;
 }
 
-.mainText {
+.main-text {
+  max-width: 638px;
   padding: 0 41px 30px 17px;
   font-family: "Manrope";
   font-style: normal;
